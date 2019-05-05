@@ -1,22 +1,19 @@
 {
-  "name": "map-generator",
-  "version": "1.0.0",
-  "description": "Garmin Img file generator",
-  "main": "app.js",
+  "name": "garmin-map-generator",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fabsgc/garmin-map-generator.git"
-  },
-  "author": "Fabien Beaujean",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fabsgc/garmin-map-generator/issues"
-  },
-  "homepage": "https://github.com/fabsgc/garmin-map-generator#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "twig": "~0.10.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }
