@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:\\garmin-utils\\CityBuilderEditor"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"database": "D:\\garmin-utils\\garmin-map-generator\\database.db",
+				"dialect": "SQLite",
+				"name": "database-garmin"
+			}
+		]
+	}
+}

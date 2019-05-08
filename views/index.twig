@@ -4,5 +4,38 @@
 <div id="map">
 </div>
 <div id="menu">
+    <div id="menu-tool">
+        <div class="menu-content">
+            <div id="tool-select" class="tool selected" title="Select">
+                <span class="fa fa-mouse-pointer"></span>
+            </div>
+            <div id="tool-clear" class="tool" title="Clear">
+                <span class="fa fa-trash-alt"></span>
+            </div>
+            <div id="tool-save" class="tool" title="Save">
+                <span class="fa fa-save"></span>
+            </div>
+        </div>
+    </div>
+    <div id="menu-tile">
+        <div class="menu-title">
+            Selected tiles
+        </div>
+        <div id="tile-list">
+            
+        </div>
+    </div>
+    <div id="save" class="hidden">
+        <div class="save-top">
+            <div id="save-title" class="save-title">
+                Backup
+            </div>
+            <div id="save-close" class="save-close">
+                <span class="fa fa-times"></span>
+            </div>
+        </div>
+        <div class="save-body">
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -65,6 +65,11 @@ App.Editor = function(){
     function ClickMapHandler(e) {
         console.log("Click map handler");
         console.log(e.detail);
+
+        switch(_menu.GetCurrentTool()) {
+            case ToolType.Select:
+            break;
+        }
     }
 
     /**
@@ -75,6 +80,11 @@ App.Editor = function(){
      */
     function ClearHandler(e) {
         console.log("Clear handler");
+
+        _tiles = [];
+        _map.Clear();
+
+        DrawOptions(_tiles);
     }
 
     /**
@@ -85,5 +95,20 @@ App.Editor = function(){
      */
     function SaveHandler(e) {
         console.log("Save handler");
+
+        if(_tiles.length > 0) {
+            _save.DisplaySave(_tiles);
+        }
+    }
+
+    /**
+     * @method App.Editor#DrawOptions
+     * @param {Tile[]} tileList
+     * @private
+     * @return {void}
+     */
+    function DrawOptions(tileList) {
+        console.log("Draw options");
+        _menu.DrawOptions(tileList);
     }
 }
